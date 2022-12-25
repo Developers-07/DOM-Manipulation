@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation 4</title>
+</head>
+<body>
+
+    <ul>
+        <li>First Element</li>
+        <li>Second Element</li>
+        <li>Third Element</li>
+    </ul>
+
+    <div id="div1">First DIV</div>
+
+
+
+    <script>
+        
+        // Create a node element or tag
+
+        // create a div tag
+        const newDiv = document.createElement('div');
+  
+        // three way to add text into that
+        // First one
+        newDiv.innerHTML=`<ul>
+        <li>First Element</li>
+        <li>Second Element</li>
+        <li>Third Element</li>
+    </ul>`;
+
+        // Second One
+        //newDiv.textContent='Assalamualaikum Everyone';
+
+        // Third one
+        //const newText = document.createTextNode('Hi Buddy!');
+        //newDiv.appendChild(newText);
+
+        document.body.append(newDiv);
+        document.body.prepend(newDiv);
+        document.body.before(newDiv);
+        document.body.after(newDiv);
+
+        div1.replaceWith(newDiv);
+
+    </script>
+    
+</body>
+</html>

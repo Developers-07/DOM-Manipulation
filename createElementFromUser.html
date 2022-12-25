@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation 6</title>
+</head>
+<body>
+    <h2>Create List Items :</h2>
+    <ul>
+        <li id="no1"></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <p id="mmm"></p>
+    <script>
+       let p = document.getElementById('no1');
+       let m = document.body.children[1].children[1];
+       let q = document.body.children[1].children[2];
+
+
+       let n1 = parseInt(prompt("Enter First Value :"));
+       let n2 = parseInt(prompt("Enter Second Value :"));
+       let n3 = prompt("Enter Your Name :");
+       let n4 = prompt('Enter Your Department :');
+       let sum = n1+n2;
+       p.innerHTML=sum;
+       m.innerHTML=n3;
+       q.innerHTML=n4;
+
+
+    </script>
+</body>
+</html>

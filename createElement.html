@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div class="parent">
+        <h2>DOM Manipulation</h2>
+        <ul class="lst">
+            <li class="list-item">List No 1</li>
+            <li class="list-item">List No 2</li>
+            <li class="list-item">List No 3</li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        let newElement = document.createElement('div');
+        newElement.className = 'one';
+        newElement.setAttribute('id', 'new');
+        newElement.setAttribute('title', 'old');
+        newElement.innerHTML = `    <ul class="lst">
+            <li class="list-item">List No 1</li>
+            <li class="list-item">List No 2</li>
+            <li class="list-item">List No 3</li>
+        </ul>`;
+        console.log(newElement);
+
+        let container = document.querySelector('.parent');
+        container.append(newElement);
+        container.prepend(newElement);
+
+        let selElement = document.querySelector('h2');
+        container.insertBefore(newElement, selElement);
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play With DOM 2</title>
+</head>
+<body>
+    <h1 id="container">Hi Zishan!</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maxime hic corrupti nihil amet odit corporis ipsum, accusamus repellendus ex repudiandae sed. Cumque repudiandae nemo natus eveniet dicta culpa non.</p>
+    <button>Submit</button><br>
+    <a href="#">Go to next page</a>
+    <div class="father">
+        <ul id="lst">
+            <li class="list-item">Zishan</li>
+            <li class="list-item">Abir</li>
+            <li class="list-item">Razib</li>
+        </ul>
+    </div>
+
+
+    <script>
+        // getElementById()
+        // let element = document.getElementById('container');
+        // element.innerText = 'HTML';
+        // element.innerHTML = 'Zishan Kabir Chowdhury';
+        // element.textContent = 'Welcome to DOM Manipulation';
+
+        // element.style.color = 'red';
+
+        // getElementsByClassName()
+        // let listId = document.getElementById('lst');
+        // let listClass = listId.getElementsByClassName('list-item');
+        // for (let i=0; i<listClass.length; i++){
+        //     listClass[i].style.color = 'red';
+        // }
+
+
+        // getElementsByTagName()
+        // let item = document.getElementsByTagName('p');
+        // console.log(item);
+        
+
+        // querySelector()
+        // let item = document.querySelector('.para');
+        // console.log(item);
+        // item.style.color='red';
+
+        // let item = document.querySelector('#lst');
+        // console.log(item);
+
+
+        // let far = document.querySelector('.father');
+        // console.log(far.children);
+        // console.log(far.children[0]);
+
+        
+        // let far = document.querySelector('.father');
+        // console.log(far.querySelectorAll('.list-item'));
+
+        // let child = document.querySelector('.list-item');
+        // let parent = child.parentElement;
+        // console.log(parent);
+
+        // let child = document.querySelector('.list-item');
+        // let parent = child.closest('.father');
+        // console.log(parent);
+
+        let child = document.querySelector('.list-item');
+        let sibling = child.nextElementSibling;
+        sibling.style.color='red';
+        sibling.previousElementSibling.style.color = 'yellow';
+        console.log(sibling);
+
+
+
+
+
+
+
+
+
+        
+
+        
+
+
+
+    </script>
+</body>
+</html>
